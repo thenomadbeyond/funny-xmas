@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Christmas Tree</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="scene">
+        <div class="tree">
+            <div class="star"></div>
+            <div class="layers">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+            </div>
+        </div>
+        <div class="santa">
+            🎅
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='tree_animation.js') }}"></script>
+</body>
+</html>

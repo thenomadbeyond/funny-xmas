@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.tree {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin: 0 auto;
+}
+
+.layers .layer {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid green;
+    margin: -20px auto;
+}
+
+.santa {
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    animation: moveSanta 3s infinite linear;
+}
+
+@keyframes moveSanta {
+    0% { left: -50px; }
+    100% { left: 250px; }
+}
