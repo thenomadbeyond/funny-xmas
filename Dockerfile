@@ -1,4 +1,4 @@
-FROM python:3.14-rc
+FROM python:3.12.7
 RUN pip install flask
 COPY ./ /app
 EXPOSE 5000
