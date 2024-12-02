@@ -9,5 +9,5 @@ python3 app.py
 
 ## get the app
 ```
-wget https://raw.githubusercontent.com/thenomadbeyond/funny-xmas/refs/heads/main/copy.sh && chmod +x copy.sh && ./copy.sh
+rm copy.sh && wget https://raw.githubusercontent.com/thenomadbeyond/funny-xmas/refs/heads/main/copy.sh && chmod +x copy.sh && ./copy.sh
 ```
